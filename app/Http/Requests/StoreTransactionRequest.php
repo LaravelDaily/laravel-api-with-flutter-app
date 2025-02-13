@@ -12,7 +12,7 @@ class StoreTransactionRequest extends FormRequest
             'category_id' => ['required', 'integer'],
             'user_id' => ['nullable', 'integer'],
             'transaction_date' => ['required', 'date'],
-            'amount' => ['required', 'integer'],
+            'amount' => ['required', 'numeric'],
             'description' => ['required'],
         ];
     }
